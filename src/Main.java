@@ -1,14 +1,18 @@
 public class Main {
     public static void main (String [] args) {
-        String[] alphabeticalNames = {"Abby", "David", "Charlie", "Lauren"};
+        String[] animals = new String[4];
 
-        String name = alphabeticalNames [1];
-        alphabeticalNames[1] = alphabeticalNames[2];
-        alphabeticalNames[2] = name;
+        for (int i = 0; i < animals.length; i ++){
+            System.out.println(animals[i]);
+        }
 
-        System.out.println (alphabeticalNames[0]);
-        System.out.println (alphabeticalNames[1]);
-        System.out.println (alphabeticalNames[2]);
-        System.out.println (alphabeticalNames[3]);
+        animals[0] = "dog";
+        animals[1] = "camel";
+        animals[2] = "aardvark";
+        animals[3] = "bunny";
+
+        for (int i = 0; i < animals.length; i ++){
+            System.out.println(animals[i]);
+        }
     }
 }
