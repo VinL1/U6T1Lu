@@ -1,17 +1,14 @@
 public class Main {
     public static void main (String [] args) {
-        int[] heights = new int [3];
-
-        for (int i = 0; i < heights.length; i ++){
-            System.out.println(heights[i]);
+        boolean[] bools = new boolean [6];
+        for (int i = 0; i < bools.length; i ++){
+            bools[i] = i % 2 == 0;
         }
 
-        heights[0] = 78;
-        heights[1] = 72;
-        heights[heights.length - 1] = 69;
+        bools [0] = bools [3];
 
-        for (int i = 0; i < heights.length; i ++) {
-            System.out.println(heights[i]);
-        }
+        System.out.println (bools.length);
+        System.out.println (bools[0]);
+        System.out.println (bools[bools.length - 1]);
     }
 }
